@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/new'
-
+  devise_for :users
   root "pages#home"
   get "about" => "pages#about"
   # get 'pages/about'

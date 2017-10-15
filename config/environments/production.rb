@@ -88,4 +88,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  # required for Heroku
+  # Set to actual host later
+  config.action_mailer.default_url_options = { host: 'https://pinterest-mock.herokuapp.com/' }
 end
