@@ -11,8 +11,9 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require_tree .
 //= require jquery3
 //= require popper
+//= require masonry/jquery.masonry
+//= require masonry/jquery.imagesloaded.min
 //= require bootstrap-sprockets
