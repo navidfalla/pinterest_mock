@@ -36,6 +36,8 @@ gem 'paperclip', '~> 5.0'
 gem 'aws-sdk', '< 3.0'
 gem 'masonry-rails'
 gem 'font-awesome-sass'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
