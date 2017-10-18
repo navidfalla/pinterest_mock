@@ -1,9 +1,16 @@
-<%= image_tag @pin.image.url(:medium) %>
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
-<% if @pin.user == current_user %>
-  <%= link_to 'Edit', edit_pin_path(@pin) %> |
-<% end %>
 <%= link_to 'Back', pins_path %>
+<div class="row">
+  <div class="col-md-offset-5 col-md-8">
+    <div class="box card" style="width: 20rem;">
+      <%= image_tag @pin.image.url(:medium) %>
+      <div class="box-body">
+      <p>
+        <strong>Description:</strong>
+        <%= @pin.description %>
+      </p>
+      <% if @pin.user == current_user %>
+        <%= link_to 'Edit', edit_pin_path(@pin) %> |
+      <% end %>
+      </div>
+  </div>
+</div>
