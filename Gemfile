@@ -37,7 +37,7 @@ gem 'aws-sdk', '< 3.0'
 gem 'masonry-rails'
 gem 'font-awesome-sass'
 gem 'will_paginate'
-gem 'will_paginate-bootstrap'
+gem 'will_paginate-bootstrap4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

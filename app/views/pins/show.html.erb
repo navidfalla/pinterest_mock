@@ -6,7 +6,9 @@
       <div class="box-body">
       <p>
         <strong>Description:</strong>
-        <%= @pin.description %>
+        <%= @pin.description %></br>
+        <strong>User:</strong>
+        <%= @pin.user.name if @pin.user %>
       </p>
       <% if @pin.user == current_user %>
         <%= link_to 'Edit', edit_pin_path(@pin) %> |
